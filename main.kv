@@ -1,0 +1,12 @@
+BoxLayout:
+    orientation: 'vertical'
+    MDTextField:
+        id: text
+
+    MDRaisedButton:
+        text: 'press'
+        on_release: app.speak(text.text)
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+    MDLabel:
+        text: ""
